@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ambos de diseño para profesionales de la salud. Nuestra calidad y la comodidad de nuestros ambos marcan la diferencia. Envíos a todo el país. Compra Online en 3 y 6 Cuotas sin interes."/>
+    <meta name="keywords" content="ambos uniformes salud chaquetas guardapolvos cofias spandex ambo uniforme cofia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ambos Sidd │ Moreno Maria Florencia</title>
+</head>
+<body>
+<!-- HEADER -->
+    <header class="container-fluid d-flex justify-content-center">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo2.png" alt="Logo Ambos Sidd" class="img-fluid">
+            </a>
+            <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#barra" data-bs-toggle="collapse">
+                <img src="./media/menu-v.svg" alt="Logo Menu">
+            </button>
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav">
+                    <li class="nav-item mBtn"><a class="nav-link" href="./index.html">INICIO</a></li>
+                    <li class="nav-item mBtn"><a class="nav-link" href="./index.html">PRODUCTOS</a></li>
+                    <li class="nav-item mBtn"><a class="nav-link" href="">NOSOTROS</a></li>
+                    <li class="nav-item mBtn"><a class="nav-link" href="">CONTACTO</a></li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
+<!-- MAIN -->
+    <main>
+        <div class="main1 container-sm mt-1 mb-1 section slide">
+            <h1 class="section__title">Nuestros productos</h1>
+            <p class="section__text">Hacemos todos nuestros ambos con amor y diseños copados. Podés conseguir nuestros productos desde cualquier parte del pais.</p>
+        </div>
+        <div>
+            <!-- Botón de offcanvas -->
+            <button type="button" class="btn btn-del-carrito" id="carritotbtn" data-bs-toggle="offcanvas" data-bs-target="#demo"><img src="./media/bx-cart.svg" alt="Logo del carrito"></button>
+            <!-- Offcanvas  id="plantillaDelCarrito" -->
+            <div class="offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Carrito de compras~</h1>
+                    <button type="button" class="btn-close btn" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body" id="plantillaDelCarrito"></div>
+                <!-- JS suma el contenido acá -->
+                <div class="offcanvas-end" id="totalCarrito"></div>
+                <div class="offcanvas-end offcanvas-centrar">
+                    <button id="comprarBtn" class="btn btn-secondary" type="button">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div id="plantilla" class="container-sm main3"></div>
+    </main>
+<!--  FOOTER  -->
+    <footer class="footer container-fluid">
+        <div class="row pt-2">
+            <article class="footer__sec col text-center" id="invisible">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">NAVEGACIÓN</li>
+                    <li><a href="" class="footer__item text-decoration-none">Inicio</a></li>
+                    <li><a href="" class="footer__item text-decoration-none">Productos</a></li>
+                    <li><a href="" class="footer__item text-decoration-none">Nosotros</a></li>
+                    <li><a href="" class="footer__item text-decoration-none">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">CONTACTANOS<li>
+                    <li class="footer__item"><img src="./media/bxl-wp.svg" alt="Whatsapp" height="100%" class="footer__img"> (011)15-68505922</li>
+                    <li class="footer__item"><img src="./media/bxl-store.svg" alt="Store logo" height="100%" class="footer__img"> Quilmes Oeste - Buenos Aires, Argentina</li> 
+                </ul>
+            </article>
+            <article class="footer__sec col text-center">
+                <ul class="list-unstyled">
+                    <li class="footer__item fw-bold">REDES SOCIALES</li>
+                    <li><a href="https://www.instagram.com/ambossidd" class="footer__item text-decoration-none" target="_blank"><img src="./media/bxl-instagram.svg" alt="Instagram" height="100%" class="footer__img"> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" class="footer__item text-decoration-none" target="_blank"><img src="./media/bxl-facebook.svg" alt="Facebook" height="100%" class="footer__img"> Facebook</a></li>
+                </ul>
+            </article>
+        </div>
+<!--         <div class="container-fluid text-center">
+            <p class="signature">Made by <span id="sign"><a href="https://github.com/aliss-p"> a unicorn ❤</a></span></p>
+        </div> -->
+    </footer> 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Sweet Alert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Hoja de JS -->
+    <script src="./carrito.js"></script>
+</body>
+</html>
